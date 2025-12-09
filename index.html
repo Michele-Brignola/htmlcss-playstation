@@ -26,5 +26,59 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Sony Banner -->
+      <div class="bg-black d-flex justify-content-end" style="height: 35px">
+        <img class="m-2" style="width: 70px" src="./img/sony_logo.svg" alt="" />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="./img/play_logo.svg" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Returnal Banner -->
+      <section id="banner">
+        <div id="banner-container" class="container-fluid">
+          <img
+            id="returnal-banner"
+            class="position-relative object-fit-cover"
+            src="./img/jumbo-bg.png"
+            alt="" />
+          <div id="banner-content" class="position-absolute p-4">
+            <img
+              id="returnal-logo"
+              src="./img/returnal-hero-banner-logo.png"
+              alt="" />
+            <h1 class="my-4">Rompi il cerchio</h1>
+            <p class="fw-semibold">
+              Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni
+              rinascita in questo esplosivo thriller fantascentifico,
+              disponibile in escusiva su PS5.
+            </p>
+            <button class="btn btn-primary my-3 border-0 fs-5 fw-semibold">
+              Acquista ora
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
