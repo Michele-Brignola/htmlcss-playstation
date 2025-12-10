@@ -6,7 +6,7 @@ h1 {
   font-weight: 600;
 }
 
-img {
+main img {
   width: 100%;
 }
 
@@ -17,11 +17,6 @@ img {
 /* Sony Header */
 #sony-header {
   height: 30px;
-}
-
-#sony-header img {
-  width: 55px;
-  height: 20px;
 }
 
 /* Navbar */
@@ -80,10 +75,20 @@ img {
   top: 5%;
 }
 
+/* PS Plus */
+#plus .btn {
+  background-color: gainsboro;
+}
+
 /* Media MD */
 @media (min-width: 768px) {
   .banner-content img {
     width: 420px;
+  }
+
+  /* Carousel Section */
+  #carousel .col.item img {
+    scale: .6;
   }
 }
 
