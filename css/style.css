@@ -34,32 +34,34 @@ img {
 }
 
 /* Banner */
-#banner .container-fluid {
+#banner .container-fluid,
+#it-takes-two .container-fluid {
   padding: 0;
 }
 
-#banner .container-fluid > img {
+#banner .container-fluid > img,
+#it-takes-two .container-fluid > img {
   min-height: 65vh;
 }
 
-#banner-content {
+#banner .banner-content {
   top: 38%;
 }
 
-#banner-content img {
+.banner-content img {
   width: 280px;
 }
 
-#banner-content h1 {
+.banner-content h1 {
   font-size: 38px;
   color: #fff;
 }
 
-#banner-content p {
+.banner-content p {
   color: #fff;
 }
 
-#banner-content .btn {
+.banner-content .btn {
   background-color: #ff4500;
 }
 
@@ -73,27 +75,23 @@ img {
   padding: 2px;
 }
 
+/* It Takes Two */
+#it-takes-two .banner-content{
+  top: 5%;
+}
+
 /* Media MD */
 @media (min-width: 768px) {
-  #returnal-logo {
+  .banner-content img {
     width: 420px;
   }
 }
 
 /* Media LG */
 @media (min-width: 992px) {
-  #banner-content {
+  .banner-content {
     width: 500px;
 
-    margin-left: 60px;
-    scale: 1.2;
-  }
-
-  #returnal-logo {
-    width: 280px;
-  }
-
-  #banner h1 {
-    font-size: 50px;
+    margin-left: 30px;
   }
 }
