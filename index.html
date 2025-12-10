@@ -30,12 +30,15 @@
     <!-- Header -->
     <header>
       <!-- Sony Banner -->
-      <div class="bg-black d-flex justify-content-end" style="height: 35px">
-        <img class="m-2" style="width: 70px" src="./img/sony_logo.svg" alt="" />
+      <div id="sony-header" class="bg-black text-end">
+        <img class="m-2" src="./img/sony_logo.svg" alt="" />
       </div>
 
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="light">
         <div class="container-fluid">
           <img class="navbar-brand" src="./img/play_logo.svg" alt="" />
           <button
@@ -50,7 +53,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown mx-2">
                 <a
                   class="nav-link dropdown-toggle fw-semibold"
                   href="#"
@@ -59,8 +62,16 @@
                   aria-expanded="false">
                   Giochi
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown mx-lg-2">
                 <a
                   class="nav-link dropdown-toggle fw-semibold"
                   href="#"
@@ -69,8 +80,16 @@
                   aria-expanded="false">
                   Hardware
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown mx-lg-2">
                 <a
                   class="nav-link dropdown-toggle fw-semibold"
                   href="#"
@@ -79,8 +98,16 @@
                   aria-expanded="false">
                   Servizi
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown mx-lg-2">
                 <a
                   class="nav-link dropdown-toggle fw-semibold"
                   href="#"
@@ -89,8 +116,16 @@
                   aria-expanded="false">
                   Novità
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown mx-lg-2">
                 <a
                   class="nav-link dropdown-toggle fw-semibold"
                   href="#"
@@ -99,8 +134,16 @@
                   aria-expanded="false">
                   Fai acquisti
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown mx-lg-2">
                 <a
                   class="nav-link dropdown-toggle fw-semibold"
                   href="#"
@@ -109,6 +152,40 @@
                   aria-expanded="false">
                   Supporto
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown mx-lg-2">
+                <a
+                  class="nav-link dropdown-toggle fw-semibold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  My Playstation
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-2">
+                <button class="btn btn-dark">Accedi</button>
+              </li>
+              <li class="nav-item mx-2">
+                <img src="./img/lens.svg" alt="lens" />
               </li>
             </ul>
           </div>
@@ -119,10 +196,10 @@
     <main>
       <!-- Returnal Banner -->
       <section id="banner">
-        <div id="banner-container" class="container-fluid">
+        <div id="banner-container" class="container-fluid position-relative">
           <img
             id="returnal-banner"
-            class="position-relative object-fit-cover"
+            class="object-fit-cover"
             src="./img/jumbo-bg.png"
             alt="" />
           <div id="banner-content" class="position-absolute p-4">
