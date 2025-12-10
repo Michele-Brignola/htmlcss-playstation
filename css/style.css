@@ -2,18 +2,31 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
 /* Sony Header */
 #sony-header {
   height: 30px;
 }
 
 #sony-header img {
-  height: 13px;
+  width: 55px;
+  height: 20px;
 }
 
 /* Navbar */
-#navbar .nav-item .btn {
-  border-radius: 20px;
+.navbar-brand {
+  width: 50px;
 }
 
 #navbar .nav-item img {
@@ -25,8 +38,7 @@
   padding: 0;
 }
 
-#returnal-banner {
-  width: 100%;
+#banner .container-fluid > img {
   min-height: 65vh;
 }
 
@@ -34,21 +46,20 @@
   top: 38%;
 }
 
-#returnal-logo {
+#banner-content img {
   width: 280px;
 }
 
-#banner h1 {
-  font-size: 41px;
+#banner-content h1 {
+  font-size: 38px;
   color: #fff;
 }
 
-#banner p {
+#banner-content p {
   color: #fff;
 }
 
-#banner .btn {
-  border-radius: 20px;
+#banner-content .btn {
   background-color: #ff4500;
 }
 
