@@ -7,7 +7,7 @@ h1 {
 }
 
 main img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .btn {
@@ -17,6 +17,15 @@ main img {
 /* Sony Header */
 #sony-header {
   height: 30px;
+}
+
+#sony-header > div {
+  display: flex;
+  justify-content: end;
+}
+
+#sony-header img {
+  height: 15px;
 }
 
 /* Navbar */
@@ -29,18 +38,14 @@ main img {
 }
 
 /* Banner */
-#banner .container-fluid,
-#it-takes-two .container-fluid {
-  padding: 0;
-}
-
-#banner .container-fluid > img,
-#it-takes-two .container-fluid > img {
+#banner .container-fluid {
+  background: url(../img/jumbo-bg.png);
+  background-position: center;
   min-height: 65vh;
-}
 
-#banner .banner-content {
-  top: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-content img {
@@ -58,11 +63,11 @@ main img {
 
 .banner-content .btn {
   background-color: #ff4500;
+  max-width: 160px;
 }
 
 /* Thumbnail */
 .thumbnail {
-  width: 220px;
   border-radius: 35px;
 }
 
@@ -71,8 +76,14 @@ main img {
 }
 
 /* It Takes Two */
-#it-takes-two .banner-content{
-  top: 5%;
+#it-takes-two .container-fluid {
+  background: url(../img/it-takes-two-hero-banner-desktop.jpg);
+  background-position: center;
+  min-height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* PS Plus */
